@@ -8,10 +8,10 @@
         <div class="row align-items-center min-vh-100 py-5">
             <div class="col-lg-6 text-center text-lg-start mb-5 mb-lg-0">
                 <span class="badge bg-primary bg-opacity-25 text-white rounded-pill px-3 py-2 mb-4 border border-light border-opacity-25 shadow-sm" style="backdrop-filter: blur(4px);">
-                    <i class="bi bi-star-fill text-warning me-1"></i> Top Rated Coaching Center
+                    <i class="bi bi-award-fill text-warning me-1"></i> Celebrating 38+ Years of Educational Excellence
                 </span>
-                <h1 class="display-3 fw-bold mb-4 lh-sm text-white drop-shadow">Empowering Your <br><span class="text-accent">Bright Future</span></h1>
-                <p class="lead mb-5 opacity-75 fs-5 pe-lg-5">Join over 50,000 successful students. Expert guidance, premium study materials, and a proven track record since 1986.</p>
+                <h1 class="display-3 fw-bold mb-4 lh-sm text-white drop-shadow">Shaping Bright Futures & <br><span class="text-accent">Empowering Success</span></h1>
+                <p class="lead mb-5 opacity-75 fs-5 pe-lg-5">Providing unmatched academic guidance, top-tier faculty, and a supportive environment for every aspiring student since 1986.</p>
                 <div class="d-flex gap-3 justify-content-center justify-content-lg-start flex-wrap">
                     <a href="#courses" class="btn btn-primary btn-lg px-5 py-3 shadow-lg rounded-pill fw-bold"><i class="bi bi-rocket-takeoff-fill me-2"></i> Explore Courses</a>
                     <a href="#contact" class="btn btn-outline-light btn-lg px-5 py-3 rounded-pill fw-bold" style="border-width: 2px;">Contact Us</a>
@@ -29,7 +29,7 @@
                             </div>
                             <div>
                                 <h4 class="mb-0 fw-bold">50k+</h4>
-                                <small class="text-white opacity-75 fw-medium">Active Students</small>
+                                <small class="text-white opacity-75 fw-medium">Alumni</small>
                             </div>
                         </div>
                     </div>
@@ -41,7 +41,7 @@
                                 <i class="bi bi-award-fill fs-4 text-white"></i>
                             </div>
                             <div>
-                                <h4 class="mb-0 fw-bold">35+</h4>
+                                <h4 class="mb-0 fw-bold">38+</h4>
                                 <small class="text-white opacity-75 fw-medium">Years Exp.</small>
                             </div>
                         </div>
@@ -68,8 +68,41 @@
                 <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Education" class="img-fluid rounded-4 shadow-lg position-relative w-100" style="object-fit: cover; height: 500px;">
                 <!-- Floating Badge -->
                 <div class="position-absolute bottom-0 end-0 bg-white p-4 rounded-4 shadow-lg m-4 text-center border-start border-4 border-primary d-none d-md-block">
-                    <h2 class="fw-bold text-primary mb-0 display-5">35+</h2>
+                    <h2 class="fw-bold text-primary mb-0 display-5">38+</h2>
                     <p class="text-muted fw-bold mb-0">Years of<br>Excellence</p>
+                </div>
+            </div>
+            <div class="col-lg-5 offset-lg-1">
+                <div class="d-flex align-items-center mb-3">
+                    <div class="bg-primary bg-opacity-10 p-2 rounded-circle me-3">
+                        <i class="bi bi-book-half text-primary fs-4"></i>
+                    </div>
+                    <span class="text-primary fw-bold text-uppercase tracking-wider small">About Our Institution</span>
+                </div>
+                <h2 class="fw-bold text-dark mt-1 mb-3">A Legacy of Academic Excellence Since 1986</h2>
+                <p class="text-muted leading-relaxed mb-3">For over three decades, Rongdhonu Coaching Center has been the benchmark of academic success in Khulna. We started with a mission to ignite curiosity and foster deep analytical thinking in young minds.</p>
+                <p class="text-muted leading-relaxed mb-4">Our experienced faculty members employ interactive learning methodologies, continuous evaluations, and dedicated mentoring to help students excel in board and competitive examinations.</p>
+                
+                <div class="row g-3 mt-3 mb-4">
+                    <div class="col-4">
+                        <div class="p-3 bg-white rounded-3 shadow-sm text-center border-start border-4 border-primary">
+                            <h3 class="text-primary fw-bold mb-0">38+</h3>
+                            <span class="text-muted small">Years Exp.</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="p-3 bg-white rounded-3 shadow-sm text-center border-start border-4 border-success">
+                            <h3 class="text-success fw-bold mb-0">50k+</h3>
+                            <span class="text-muted small">Alumni</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="p-3 bg-white rounded-3 shadow-sm text-center border-start border-4 border-info">
+                            <h3 class="text-info fw-bold mb-0">100+</h3>
+                            <span class="text-muted small">Teachers</span>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
             <div class="col-lg-5 offset-lg-1">
@@ -167,7 +200,7 @@
     <div class="container">
         <div class="text-center mb-5">
             <h6 class="text-accent fw-bold text-uppercase mb-2 tracking-wide"><i class="bi bi-book-half me-2"></i>What We Offer</h6>
-            <h2 class="display-5 fw-bold text-dark">Our Premium Courses</h2>
+            <h2 class="display-5 fw-bold text-dark">Our Featured Courses</h2>
         </div>
         
         <div class="row g-4 mt-2">
@@ -188,28 +221,21 @@
                         </div>
                     </div>
                     <div class="card-body p-4 position-relative z-index-2 bg-white d-flex flex-column">
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-                            <span class="badge bg-soft-blue text-primary rounded-pill px-3 py-2 fw-medium"><i class="bi bi-clock me-1"></i> {{ $course->duration }}</span>
-                            <span class="text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                        <div class="mb-2">
+                            <span class="badge bg-primary-subtle text-primary">Academic</span>
                         </div>
                         <h4 class="card-title fw-bold text-dark mb-3">{{ $course->title }}</h4>
                         <p class="card-text text-muted mb-4 flex-grow-1">{{ Str::limit($course->description, 100) }}</p>
-                        
-                        <div class="d-flex align-items-center justify-content-between border-top pt-4 mt-auto">
-                            <div class="d-flex align-items-center">
-                                <div class="bg-light rounded-circle d-flex align-items-center justify-content-center me-2 text-primary" style="width: 40px; height: 40px;">
-                                    <i class="bi bi-person-fill fs-5"></i>
-                                </div>
-                                <span class="fw-bold text-dark small">Expert Teacher</span>
-                            </div>
-                            <a href="#contact" class="btn btn-outline-primary rounded-pill px-4 btn-sm fw-bold">Enroll Now</a>
-                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-top border-light d-flex justify-content-between align-items-center px-4 py-3">
+                        <span class="badge bg-soft-blue text-primary rounded-pill px-3 py-2 fw-medium"><i class="bi bi-clock me-1"></i> {{ $course->duration }}</span>
+                        <a href="#contact" class="btn btn-outline-primary rounded-pill px-4 btn-sm fw-bold">Enroll Now</a>
                     </div>
                 </div>
             </div>
             @empty
             <div class="col-12 text-center text-muted py-5">
-                <i class="bi bi-inbox display-1 text-light mb-3"></i>
+                <i class="bi bi-journal-x display-1 text-light mb-3"></i>
                 <h4>No courses available at the moment.</h4>
             </div>
             @endforelse
@@ -222,28 +248,28 @@
     <div class="container">
         <div class="text-center mb-5">
             <h6 class="text-accent fw-bold text-uppercase mb-2 tracking-wide"><i class="bi bi-people-fill me-2"></i>Our Faculty</h6>
-            <h2 class="display-5 fw-bold text-dark">Meet Our Experts</h2>
+            <h2 class="display-5 fw-bold text-dark">Our Dedicated Experts</h2>
         </div>
         
         <div class="row g-4 mt-2 justify-content-center">
             @php $teachers = \App\Models\Teacher::latest()->take(4)->get(); @endphp
             @forelse($teachers as $teacher)
             <div class="col-lg-3 col-md-6">
-                <div class="card border-0 shadow-sm transition-hover text-center h-100 rounded-4 bg-light-gray">
-                    <div class="card-body p-5">
-                        <div class="mb-4 mx-auto position-relative d-inline-block">
-                            <div class="position-absolute top-50 start-50 translate-middle bg-primary rounded-circle" style="width: 140px; height: 140px; opacity: 0.1;"></div>
-                            @if($teacher->image)
-                                <img src="{{ asset('storage/'.$teacher->image) }}" class="rounded-circle shadow position-relative z-index-2 transition-hover-image" width="120" height="120" style="object-fit: cover; border: 4px solid white;">
-                            @else
-                                <div class="bg-primary text-white rounded-circle d-flex justify-content-center align-items-center mx-auto shadow position-relative z-index-2 transition-hover-image" style="width: 120px; height: 120px; border: 4px solid white;">
-                                    <i class="bi bi-person display-3"></i>
-                                </div>
-                            @endif
-                        </div>
-                        <h4 class="fw-bold mb-1 text-dark">{{ $teacher->name }}</h4>
-                        <p class="text-primary fw-medium mb-3">{{ $teacher->designation }}</p>
-                        <div class="d-flex justify-content-center gap-2 mt-3">
+                <div class="card border-0 shadow-sm transition-hover text-center h-100 rounded-4 bg-light-gray py-4">
+                    <div class="mb-4 mx-auto position-relative d-inline-block">
+                        <div class="position-absolute top-50 start-50 translate-middle bg-primary rounded-circle" style="width: 140px; height: 140px; opacity: 0.1;"></div>
+                        @if($teacher->image)
+                            <img src="{{ asset('storage/'.$teacher->image) }}" class="rounded-circle shadow position-relative z-index-2 transition-hover-image" width="120" height="120" style="object-fit: cover; border: 4px solid white;">
+                        @else
+                            <div class="bg-primary text-white rounded-circle d-flex justify-content-center align-items-center mx-auto shadow position-relative z-index-2 transition-hover-image" style="width: 120px; height: 120px; border: 4px solid white;">
+                                <i class="bi bi-person display-3"></i>
+                            </div>
+                        @endif
+                    </div>
+                    <div class="card-body p-3">
+                        <h4 class="fw-bold mb-2 text-dark">{{ $teacher->name }}</h4>
+                        <span class="badge bg-info-subtle text-info fw-semibold mb-3">{{ $teacher->designation }}</span>
+                        <div class="d-flex justify-content-center gap-2 mt-2">
                             <a href="#" class="btn btn-light text-primary rounded-circle shadow-sm" style="width: 40px; height: 40px; padding: 8px;"><i class="bi bi-facebook"></i></a>
                             <a href="#" class="btn btn-light text-info rounded-circle shadow-sm" style="width: 40px; height: 40px; padding: 8px;"><i class="bi bi-twitter"></i></a>
                             <a href="#" class="btn btn-light text-danger rounded-circle shadow-sm" style="width: 40px; height: 40px; padding: 8px;"><i class="bi bi-instagram"></i></a>

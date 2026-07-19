@@ -9,3 +9,137 @@
 
 // Bootstrap Icons
 @import 'bootstrap-icons/font/bootstrap-icons.css';
+
+/* Custom UI Enhancements */
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #2d3748;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #007bff 100%);
+    color: white;
+    padding: 110px 0 90px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -20%;
+    width: 140%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0) 70%);
+    pointer-events: none;
+}
+
+.hero-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 24px;
+}
+
+.section-title {
+    font-weight: 800;
+    margin-bottom: 45px;
+    text-align: center;
+    color: #1a202c;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #007bff, #00c6ff);
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
+.section-padding {
+    padding: 85px 0;
+}
+
+/* Card Improvements */
+.transition-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px !important;
+    overflow: hidden;
+}
+
+.transition-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.teacher-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 16px !important;
+}
+
+.teacher-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08) !important;
+}
+
+.teacher-card img {
+    transition: transform 0.3s ease;
+}
+
+.teacher-card:hover img {
+    transform: scale(1.06);
+}
+
+/* Footer Improvements */
+.footer {
+    background-color: #111827;
+    color: #9ca3af;
+    padding: 60px 0 25px;
+}
+
+.footer h5 {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.footer-link {
+    color: #9ca3af;
+    text-decoration: none;
+    transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.footer-link:hover {
+    color: #38bdf8;
+    padding-left: 4px;
+}
+
+.social-icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.social-icon-btn:hover {
+    background: #0284c7;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
