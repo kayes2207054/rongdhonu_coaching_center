@@ -10,61 +10,98 @@
     <title>{{ config('app.name', 'Rongdhonu Coaching') }} - Admin Panel</title>
 
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
     <style>
-        body {
-            background-color: #f4f6f9;
+        :root {
+            --primary: #4F46E5;
+            --primary-hover: #4338CA;
+            --dark-sidebar: #111827;
+            --sidebar-hover: #1F2937;
+            --light-bg: #F3F4F6;
         }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--light-bg);
+            color: #374151;
+        }
+        
+        /* Sidebar styling */
         .sidebar {
             min-height: 100vh;
-            background-color: #343a40;
-            color: #fff;
-        }
-        .sidebar a {
-            color: #c2c7d0;
-            text-decoration: none;
-            padding: 10px 15px;
-            display: block;
-            border-radius: 4px;
-            margin-bottom: 5px;
-        }
-        .sidebar a:hover, .sidebar a.active {
-            background-color: #007bff;
-            color: #fff;
+            background-color: var(--dark-sidebar);
+            color: #D1D5DB;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+            z-index: 1000;
         }
         .sidebar-brand {
             font-size: 1.25rem;
-            padding: 15px;
+            padding: 20px 15px;
             text-align: center;
-            font-weight: bold;
-            background-color: #343a40;
+            font-weight: 700;
+            background-color: #0B0F19;
             color: #fff;
-            border-bottom: 1px solid #4f5962;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
             display: block;
             text-decoration: none;
+            letter-spacing: -0.5px;
         }
-        .sidebar-brand:hover {
+        .sidebar-brand:hover { color: #fff; }
+        .sidebar a {
+            color: #9CA3AF;
+            text-decoration: none;
+            padding: 12px 16px;
+            display: block;
+            border-radius: 8px;
+            margin-bottom: 4px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        .sidebar a:hover {
+            background-color: var(--sidebar-hover);
             color: #fff;
+            transform: translateX(3px);
         }
+        .sidebar a.active {
+            background-color: var(--primary);
+            color: #fff;
+            box-shadow: 0 4px 6px -1px rgba(79, 70, 229, 0.3);
+        }
+        
+        /* Main Layout */
         .main-content {
             flex-grow: 1;
-            padding: 20px;
+            padding: 24px;
+            max-width: calc(100vw - 250px);
         }
         .topbar {
             background: #fff;
-            padding: 10px 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,.08);
-            margin-bottom: 20px;
-            border-radius: 5px;
+            padding: 15px 24px;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+            margin-bottom: 24px;
+            border-radius: 12px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
+        
+        /* Overrides */
+        .card {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+        .card-header { background-color: #fff; border-bottom: 1px solid #F3F4F6; }
+        .btn { font-weight: 500; border-radius: 6px; padding: 0.5rem 1rem; transition: all 0.2s; }
+        .btn-primary { background-color: var(--primary); border-color: var(--primary); }
+        .btn-primary:hover { background-color: var(--primary-hover); transform: translateY(-1px); box-shadow: 0 4px 6px -1px rgba(79, 70, 229, 0.2); }
+        .table { margin-bottom: 0; }
+        .table th { border-bottom-width: 1px; font-weight: 600; color: #4B5563; background-color: #F9FAFB; }
     </style>
 </head>
 <body>
@@ -125,6 +162,15 @@
 
             <!-- Page Content -->
             <div>
+                @if ($errors->any())
+                    <div class="alert alert-danger mb-4 shadow-sm border-0">
+                        <ul class="mb-0">
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
                 @yield('content')
             </div>
         </div>
