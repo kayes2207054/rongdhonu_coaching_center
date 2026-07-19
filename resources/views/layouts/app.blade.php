@@ -122,6 +122,9 @@
                 <a href="{{ route('courses.index') }}" class="{{ request()->routeIs('courses.*') ? 'active' : '' }}">
                     <i class="bi bi-book me-2"></i> Courses
                 </a>
+                <a href="{{ route('enrollments.index') }}" class="{{ request()->routeIs('enrollments.*') ? 'active' : '' }}">
+                    <i class="bi bi-person-lines-fill me-2"></i> Enrollments
+                </a>
                 <a href="{{ route('notices.index') }}" class="{{ request()->routeIs('notices.*') ? 'active' : '' }}">
                     <i class="bi bi-megaphone me-2"></i> Notices
                 </a>

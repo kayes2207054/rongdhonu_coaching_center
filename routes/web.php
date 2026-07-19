@@ -7,6 +7,7 @@ use App\Http\Controllers\CourseController;
 use App\Http\Controllers\NoticeController;
 use App\Http\Controllers\ResultController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\EnrollmentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +25,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::post('/contact', [ContactController::class, 'storePublic']);
+Route::post('/enroll', [EnrollmentController::class, 'storePublic'])->name('enroll.store');
 
 // Authentication Routes
 Auth::routes();
@@ -38,4 +40,5 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'admin'], function () {
     Route::resource('notices', NoticeController::class);
     Route::resource('results', ResultController::class);
     Route::resource('contacts', ContactController::class)->only(['index', 'show', 'destroy']);
+    Route::resource('enrollments', EnrollmentController::class)->only(['index', 'update', 'destroy']);
 });

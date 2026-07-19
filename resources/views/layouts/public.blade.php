@@ -200,36 +200,36 @@
             <div class="row g-4 pb-4">
                 <div class="col-lg-4 col-md-6 mb-3">
                     <h5 class="fw-bold mb-3"><i class="bi bi-rainbow text-primary me-2"></i>Rongdhonu Coaching</h5>
-                    <p class="small text-muted mb-4">Empowering students with premier education, dedicated mentorship, and proven success strategies since 1986.</p>
+                    <p class="small text-white-50 mb-4">Empowering students with premier education, dedicated mentorship, and proven success strategies since 1986.</p>
                     <div class="d-flex gap-2">
-                        <a href="#" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="social-icon" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://facebook.com/rongdhonucoaching" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://twitter.com/rongdhonucoaching" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://instagram.com/rongdhonucoaching" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="https://linkedin.com/company/rongdhonu-coaching-center" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6 col-6 mb-3">
                     <h6 class="text-white fw-bold mb-3">Quick Links</h6>
                     <ul class="list-unstyled small d-flex flex-column gap-2 mb-0">
-                        <li><a href="#home" class="footer-link text-decoration-none text-muted">Home</a></li>
-                        <li><a href="#about" class="footer-link text-decoration-none text-muted">About Us</a></li>
-                        <li><a href="#courses" class="footer-link text-decoration-none text-muted">Our Courses</a></li>
-                        <li><a href="#teachers" class="footer-link text-decoration-none text-muted">Faculty</a></li>
-                        <li><a href="#notices" class="footer-link text-decoration-none text-muted">Notices</a></li>
+                        <li><a href="#home" class="footer-link text-decoration-none text-white-50">Home</a></li>
+                        <li><a href="#about" class="footer-link text-decoration-none text-white-50">About Us</a></li>
+                        <li><a href="#courses" class="footer-link text-decoration-none text-white-50">Our Courses</a></li>
+                        <li><a href="#teachers" class="footer-link text-decoration-none text-white-50">Faculty</a></li>
+                        <li><a href="#notices" class="footer-link text-decoration-none text-white-50">Notices</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 col-6 mb-3">
                     <h6 class="text-white fw-bold mb-3">Student Hub</h6>
                     <ul class="list-unstyled small d-flex flex-column gap-2 mb-0">
-                        <li><a href="#results" class="footer-link text-decoration-none text-muted">Exam Results</a></li>
-                        <li><a href="#contact" class="footer-link text-decoration-none text-muted">Contact Support</a></li>
-                        <li><a href="{{ route('login') }}" class="footer-link text-decoration-none text-muted">Student Login</a></li>
-                        <li><a href="{{ route('login') }}" class="footer-link text-decoration-none text-muted">Teacher Portal</a></li>
+                        <li><a href="#results" class="footer-link text-decoration-none text-white-50">Exam Results</a></li>
+                        <li><a href="#contact" class="footer-link text-decoration-none text-white-50">Contact Support</a></li>
+                        <li><a href="{{ route('login') }}" class="footer-link text-decoration-none text-white-50">Student Login</a></li>
+                        <li><a href="{{ route('login') }}" class="footer-link text-decoration-none text-white-50">Teacher Portal</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-3">
                     <h6 class="text-white fw-bold mb-3">Contact Info</h6>
-                    <ul class="list-unstyled small text-muted d-flex flex-column gap-2 mb-0">
+                    <ul class="list-unstyled small text-white-50 d-flex flex-column gap-2 mb-0">
                         <li><i class="bi bi-geo-alt me-2 text-primary"></i> Main Campus, KUET Road, Khulna</li>
                         <li><i class="bi bi-telephone me-2 text-primary"></i> +880 1700-000000</li>
                         <li><i class="bi bi-envelope me-2 text-primary"></i> info@rongdhonu.edu.bd</li>
@@ -238,7 +238,7 @@
                 </div>
             </div>
             <hr class="border-secondary my-3" style="opacity: 0.2;">
-            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center small text-muted">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center small text-white-50">
                 <p class="mb-0">&copy; {{ date('Y') }} Rongdhonu Coaching Center. All Rights Reserved.</p>
                 <p class="mb-0 mt-2 mt-md-0">Designed with <i class="bi bi-heart-fill text-danger mx-1"></i> for Excellence</p>
             </div>

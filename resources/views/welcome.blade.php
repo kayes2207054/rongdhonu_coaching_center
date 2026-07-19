@@ -217,7 +217,7 @@
                             </div>
                         @endif
                         <div class="position-absolute top-0 end-0 m-3 z-index-2">
-                            <span class="badge bg-white text-primary shadow-lg px-4 py-2 rounded-pill fw-bold fs-6">{{ $course->fee ? '$'.$course->fee : 'Free' }}</span>
+                            <span class="badge bg-white text-primary shadow-lg px-4 py-2 rounded-pill fw-bold fs-6">{{ $course->fee ? '৳ ' . $course->fee : 'Free' }}</span>
                         </div>
                     </div>
                     <div class="card-body p-4 position-relative z-index-2 bg-white d-flex flex-column">
@@ -229,7 +229,7 @@
                     </div>
                     <div class="card-footer bg-white border-top border-light d-flex justify-content-between align-items-center px-4 py-3">
                         <span class="badge bg-soft-blue text-primary rounded-pill px-3 py-2 fw-medium"><i class="bi bi-clock me-1"></i> {{ $course->duration }}</span>
-                        <a href="#contact" class="btn btn-outline-primary rounded-pill px-4 btn-sm fw-bold">Enroll Now</a>
+                        <button type="button" onclick="document.getElementById('enroll_course_id').value = {{ $course->id }}; document.getElementById('enroll_course_title').value = '{{ addslashes($course->title) }}';" class="btn btn-outline-primary rounded-pill px-4 btn-sm fw-bold" data-bs-toggle="modal" data-bs-target="#enrollModal">Enroll Now</button>
                     </div>
                 </div>
             </div>
@@ -252,7 +252,7 @@
         </div>
         
         <div class="row g-4 mt-2 justify-content-center">
-            @php $teachers = \App\Models\Teacher::latest()->take(4)->get(); @endphp
+            @php $teachers = \App\Models\Teacher::orderByRaw('image IS NULL')->latest()->take(20)->get(); @endphp
             @forelse($teachers as $teacher)
             <div class="col-lg-3 col-md-6">
                 <div class="card border-0 shadow-sm transition-hover text-center h-100 rounded-4 bg-light-gray py-4">
@@ -469,5 +469,47 @@
         </div>
     </div>
 </section>
+
+<!-- Enrollment Modal -->
+<div class="modal fade" id="enrollModal" tabindex="-1" aria-labelledby="enrollModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+            <div class="modal-header bg-primary text-white border-0 py-3">
+                <h5 class="modal-title fw-bold" id="enrollModalLabel"><i class="bi bi-mortarboard-fill me-2"></i>Course Enrollment</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <form action="{{ route('enroll.store') }}" method="POST">
+                    @csrf
+                    <input type="hidden" name="course_id" id="enroll_course_id">
+                    
+                    <div class="mb-3">
+                        <label class="form-label fw-bold text-muted small">Selected Course</label>
+                        <input type="text" id="enroll_course_title" class="form-control bg-light-gray border-0 fw-bold" readonly>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label fw-bold text-muted small">Full Name <span class="text-danger">*</span></label>
+                        <input type="text" name="name" class="form-control bg-light border-0" required placeholder="Enter your full name">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label fw-bold text-muted small">Email Address <span class="text-danger">*</span></label>
+                        <input type="email" name="email" class="form-control bg-light border-0" required placeholder="Enter your email address">
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label class="form-label fw-bold text-muted small">Phone Number <span class="text-danger">*</span></label>
+                        <input type="text" name="phone" class="form-control bg-light border-0" required placeholder="Enter your phone number">
+                    </div>
+                    
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary rounded-pill py-3 fw-bold shadow-sm fs-5"><i class="bi bi-check-circle-fill me-2"></i> Confirm Enrollment</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
 @endsection
